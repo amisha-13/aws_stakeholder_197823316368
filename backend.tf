@@ -1,3 +1,5 @@
+#defined s3 backend
+
 terraform {
   backend "s3" {
     bucket = "terraform-training-s3-bucket"
