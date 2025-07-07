@@ -1,13 +1,13 @@
 provider "aws" {
-    region = var.awsregion 
+  region = var.awsregion
 }
 
 module "ec2_instance_linux" {
-    source = "git::https://github.com/amisha-13/tf_aws_modules.git//module/ec2?ref=v1.3"
-    instance_type = var.instancetype
-    instance_count  = var.instancecount
-    aws_region = var.awsregion
-    
+  source         = "git::https://github.com/amisha-13/tf_aws_modules.git//module/ec2?ref=v1.3"
+  instance_type  = var.instancetype
+  instance_count = var.instancecount
+  aws_region     = var.awsregion
+
 }
 
 module "vpc" {

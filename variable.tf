@@ -1,11 +1,11 @@
 variable "instancetype" {
-    type = string
+  type = string
 }
 
 variable "instancecount" {
-    type = number
+  type = number
 }
 
 variable "awsregion" {
-    type = string
+  type = string
 }
